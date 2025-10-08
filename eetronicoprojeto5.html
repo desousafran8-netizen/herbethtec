@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbeth tec ⚡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🔌 Herbeth Tec</h1>
+    <nav>
+      <button onclick="mostrarCadastro()">📦 Cadastrar Produto</button>
+      <button onclick="mostrarVitrine()">🛒 Ver Vitrine</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- Tela de cadastro -->
+    <section id="cadastro" class="ativo">
+      <h2>📦 Cadastrar Novo Produto</h2>
+      <form id="formCadastro">
+        <input type="text" id="nomeProduto" placeholder="Nome do produto" required>
+        <input type="number" id="valorProduto" placeholder="Valor (R$)" required>
+        <input type="file" id="fotoProduto" accept="image/*" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Vitrine -->
+    <section id="vitrine" class="oculto">
+      <h2>🛍️ Produtos Disponíveis</h2>
+      <div id="listaProdutos" class="grade-produtos"></div>
+    </section>
+
+    <!-- Nota Fiscal -->
+    <section id="nota" class="oculto nota-fiscal">
+      <h2>🧾 Nota Fiscal</h2>
+      <div id="detalhesNota"></div>
+      <button onclick="imprimirNota()">🖨️ Imprimir Nota</button>
+      <button onclick="voltarParaVitrine()">⬅️ Voltar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p> Herbeth tec 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

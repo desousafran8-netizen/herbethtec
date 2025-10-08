@@ -1,0 +1,146 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav button {
+  background: white;
+  color: #0d6efd;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+header nav button:hover {
+  background: #e3f2ff;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #0d6efd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #094cbf;
+}
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.produto {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.produto button {
+  margin-top: 10px;
+  background: #198754;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background: #146c43;
+}
+
+.nota-fiscal {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+.nota-fiscal button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nota-fiscal button:hover {
+  background: #0b5ed7;
+}
+
+footer {
+  background: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.oculto {
+  display: none;
+}
+
+.ativo {
+  display: block;
+}
